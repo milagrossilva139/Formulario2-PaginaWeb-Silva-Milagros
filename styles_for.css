@@ -1,0 +1,220 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(220, 248, 248);
+    color: rgb(23, 23, 77);
+    font-family:'Roboto', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    line-height: 1.5;
+}
+
+body > div{
+    background-color: #fff;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 750px;
+    padding: 32px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.15);
+} 
+
+h1{
+    text-align: center;
+    text-decoration: underline;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+h1 + p{
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    color: rgb(82, 81, 81);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+fieldset{
+    border: 2px solid rgb(184, 186, 187);
+    border-radius: 8px;
+    padding: 24px;
+    transition: border-color 0.2s;
+    display:flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+fieldset > div{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+fieldset:hover{
+    border-color: dimgrey;
+}
+
+legend{
+    font-weight: bold;
+    font-size: 1.3rem;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="password"],
+select,
+textarea {
+    font-family: inherit;
+    width: 100%;
+    padding: 0.7rem 1rem;
+    border: 2px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 0.8rem;;
+    color:black;
+    background: #e0e2e4;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="date"]:focus,
+input[type="password"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #8544da;
+    background:#ececec;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #cbd5e1;
+    margin-right: 0.4rem;
+    vertical-align: middle;
+    cursor: pointer;
+    position: relative;
+    flex-shrink: 0;
+}
+
+input[type="radio"] {
+    border-radius: 50%;
+}
+
+input[type="radio"]:checked {
+    border-color: #3832b3;
+    background: #0d0868;
+    box-shadow: inset 0 0 0 4px #ffffff;
+}
+
+input[type="checkbox"]:checked {
+    border-color: #3832b3;
+    background:#0d0868;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+input[type="radio"]:hover,
+input[type="checkbox"]:hover {
+    border-color:#0d0868;
+}
+
+fieldset > div > div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem 1.5rem;
+    margin-top: 0.3rem;
+}
+
+button {
+    font-family: inherit;
+    font-size: 16px;
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    transition: transform 0.2s, background 0.2s;
+}
+
+button[type="submit"] {
+    background:#0d0868;
+    color: white;
+    flex: 1;
+    max-width: 250px;
+}
+
+button[type="submit"]:hover {
+    background:#070536;
+    transform: translateY(-2px);
+}
+
+button[type="submit"]:active {
+    transform: translateY(0);
+}
+
+button[type="reset"] {
+    background: transparent;
+    color: #64748b;
+    border: 2px solid #cbd5e1;
+    flex: 1;
+    max-width: 250px;
+}
+
+button[type="reset"]:hover {
+    background: #f8fafc;
+    border-color: #94a3b8;
+    color: black;
+    transform: translateY(-2px);
+}
+
+button[type="reset"]:active {
+    transform: translateY(0);
+}
+
+footer{
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+    border-top: 1px solid #e2e8f0;
+    margin-top:10px;
+}
+
+.volverlink{
+    text-decoration: none;
+    color: #0d0868;
+    font-weight: bold;
+}
+
+.volverlink:hover{
+    text-decoration: underline;
+}
